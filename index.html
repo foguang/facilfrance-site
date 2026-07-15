@@ -501,17 +501,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   (function () {
     var phoneNumber = "33636231881";
     var sourceMap = {
-      "website": "la página web de FácilFrance",
-      "web": "la página web de FácilFrance",
+      "website": "la web",
+      "web": "la web",
       "facebook": "Facebook",
       "instagram": "Instagram",
       "tiktok": "TikTok",
-      "whatsapp": "el canal de WhatsApp",
-      "whatsapp-channel": "el canal de WhatsApp",
+      "whatsapp": "el canal",
+      "whatsapp-channel": "el canal",
       "foro": "un foro",
       "forum": "un foro",
       "google": "Google",
-      "qr": "un código QR de FácilFrance"
+      "qr": "un código QR"
     };
     var params = new URLSearchParams(window.location.search);
     var source = (params.get("origen") || params.get("utm_source") || params.get("source") || "website").toLowerCase().trim();
@@ -519,7 +519,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     document.querySelectorAll('a[href*="wa.me"]').forEach(function (link) {
       var topic = link.dataset.waTopic || "sobre sus servicios";
-      var message = "Hola, vengo desde " + sourceText + ". Quisiera recibir información " + topic;
+      var message = "Hola, vengo desde " + sourceText + ". Quisiera recibir información " + topic+ ".";
       link.href = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
       link.target = "_blank";
       link.rel = "noopener noreferrer";
