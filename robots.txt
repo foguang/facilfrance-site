@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://f.870527.xyz/sitemap.xml
